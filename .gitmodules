@@ -1,0 +1,3 @@
+[submodule "bundle/pig.vim"]
+	path = bundle/pig.vim
+	url = https://github.com/motus/pig.vim.git

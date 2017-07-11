@@ -1,3 +1,4 @@
+call pathogen#helptags()
 execute pathogen#infect()
 syntax enable           " enable syntax processing
 set background=dark
@@ -17,8 +18,6 @@ set showmatch           " higlight matching parenthesis
 set ignorecase          " ignore case when searching
 set incsearch           " search as characters are entered
 set hlsearch            " highlight all matches
+set updatetime=250
 let g:rehash256 = 1
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
-augroup filetypedetect 
-au BufNewFile,BufRead *.pig set filetype=pig syntax=pig 
-augroup END
